@@ -153,6 +153,7 @@ input{
     font-size: 100%;
     opacity: 0.7;
     width: 100%;
+    transition: all 300ms ease;
 }
 
 input:hover{
@@ -178,6 +179,7 @@ input:focus{
     bottom: 0; 
     border: none; 
     font-size: 100%;
+    transition: all 300ms ease;
 }
 
 .two__column--btn:hover{
@@ -226,7 +228,7 @@ input:focus{
     flex-direction: column;
 }
 
-.service__para{
+.general__para{
     width: 100%;
     text-align: center;
     font-size: 18px;
@@ -293,4 +295,78 @@ input:focus{
     font-size: 24px;
     line-height: 1;
     color: rgba(36,62,99,1);
+}
+
+/*QUALITY WORK*/
+
+.quality__row{
+    display: flex;
+    padding: 96px 0;
+}
+
+.quality__left--column{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 64px;
+    padding: 32px 0;
+}
+
+.quality__subtitle{
+    margin: 0;
+}
+
+.quality__para{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.quality__title{
+    text-align: left;
+    margin-top: 16px;
+    line-height: 1.25;
+    font-weight: 900;
+}
+
+.btn{
+    padding: 12px 32px;
+    font-weight: 700;
+    background-color: rgba(100,21,255,1);
+    color: rgba(247,250,252,1);
+    margin-top: 32px;
+    border-radius: 50px;
+    margin-right: auto;
+    transition: all 300ms ease;
+}
+
+.btn:hover{
+    background-color: rgba(80,17,204,1);
+    color: rgba(237,242,247,1);
+}
+
+.quality__right--column{
+    max-width: 50%;
+}
+
+.quality__img{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+}
+
+.quality__img--wrapper{
+    position: relative;
+}
+
+.dots{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    fill: rgba(100,21,255,1);
+    overflow: hidden;
+    transform: matrix(1, 0, 0, 1, 40, 40);
 }
