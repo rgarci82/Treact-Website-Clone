@@ -1,5 +1,5 @@
 *{
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", system-ui;
     line-height: 1.5;
     padding: 0;
     margin: 0;
@@ -564,4 +564,164 @@ input:focus{
 .values__btn{
     margin-top: 48px;
     font-size: 14px;
+}
+
+/*PRICING*/
+
+.row__pricing{
+    padding: 96px 0;
+}
+
+.pricing__description{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing__para{
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(124,139,161,1);
+    line-height: 1.625;
+    max-width: 576px;
+}
+
+.plans{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.plan{
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+    margin-right: 32px;
+    padding: 8px 32px 0 32px;
+    max-width: 384px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgb(128 128 128 / 40%);
+    position: relative;
+}
+
+.plan__header{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    line-height: 1.625;
+    padding: 32px 0;
+}
+
+.plan__line--color{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 8px;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.name{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.price{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 4px 0;
+}
+
+.duration{
+    color: rgba(160,174,192,1);
+    font-weight: 700;
+    letter-spacing: 1.6px;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    margin: 0 -32px;
+    padding: 32px;
+    border: 0 solid #e5e7eb;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    flex: 1 1 0%;
+}
+
+.for{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.feature{
+    color: rgba(113,128,150,1);
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.btn__wrapper{
+    padding: 32px 64px;
+}
+
+.buy__btn{
+    padding: 16px 32px;
+    font-weight: 700;
+    color: rgba(247,250,252,1);
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    border-radius: 50px;
+    width: 100%;
+    border: none;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.buy__btn:hover{
+    transform: translate(2px, -2px);
+    box-shadow: 0px 5px 10px rgb(70 70 70 / 40%);
+}
+
+.plan__middle{
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    color: rgba(247,250,252,1);
+    background-color: rgba(100,21,255,1);
+}
+
+.duration__middle{
+    color: rgba(237,242,247,1);
+}
+
+.feature__middle{
+    color: rgba(226,232,240,1);
+}
+
+.features__middle{
+    border-color: rgba(102,126,234,1);
+}
+
+.btn__middle{
+    background-color: rgba(247,250,252,1) !important;
+    color: rgba(100,21,255,1);
+    background: none;
+}
+
+.line{
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.btn__right{
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
