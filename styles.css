@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+*{
+    font-family: Inter, system-ui;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    padding: 32px;
+    line-height: 1.5;
+}
+
+.row{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    position: relative;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+li{
+    list-style: none;
+}
+
+/*
+HEADER
+*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo--img{
+    margin-right: 12px;
+    width: 40px;
+}
+
+.nav__logo--wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    margin-left: 0;
+    color:rgb(36, 62, 99) ;
+    font-size: 24px;
+    padding-bottom: 4px;
+    margin-right: 24px;
+}
+
+.nav__links{
+    display: flex;
+}
+
+.nav__link--anchor{
+    margin: 0 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(36, 62, 99);
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    letter-spacing: 0.025em;
+    transition: all 300ms ease;
+
+}
+
+.nav__link--sep{
+    margin-left: 48px;
+}
+
+.nav__link--anchor:hover{
+    color: rgb(100, 21, 255);
+    border-color: rgb(100, 21, 255);
+}
+
+.nav__link--primary-anchor{
+    background-color: rgb(100, 21, 255);
+    color: rgb(247, 250, 252);
+    border-radius: 9999px;
+    padding: 12px 32px;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+.nav__link--primary-anchor:hover{
+    background-color: rgb(80, 17, 204);
+}
