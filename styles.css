@@ -31,6 +31,10 @@ li{
     list-style: none;
 }
 
+.text__purple{
+    color: rgb(100, 21, 255);
+}
+
 /*
 HEADER
 */
@@ -97,4 +101,112 @@ nav{
 
 .nav__link--primary-anchor:hover{
     background-color: rgb(80, 17, 204);
+}
+
+.header__two--section{
+    display: flex;
+    padding: 96px 0;
+}
+
+.left__section{
+    width: 41.6667%;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left__section--title{
+    font-size: 48px;
+    line-height: 1.25;
+}
+
+.left__section--para{
+    font-size: 18px;
+    margin: 32px 0;
+    font-weight: 400;
+    color: rgb(36, 62, 99);
+}
+
+.left__section--form-wrapper{
+    position: relative;
+    max-width: 448px;
+}
+
+.left__section--input{
+    padding: 20px 192px 20px 32px;
+    border-radius: 9999px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid rgb(226, 232, 240);
+    transition: all 300ms ease;
+    line-height: 1.5;
+}
+
+.left__section--input:hover{
+    border-color: rgb(160, 174, 192);
+}
+
+::placeholder{
+    color: rgb(216, 220, 227);
+    font-weight: 500;
+}
+
+.left__section--form-button{
+    position: absolute;
+    width: 160px;
+    font-size: 100%;
+    background-color: rgb(100, 21, 255);
+    padding: 14px 0;
+    border-radius: 9999px;
+    margin: 6px 8px 6px 0 ;
+    font-weight: 700;
+    color: rgb(247, 250, 252);
+    border: 0px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+}
+
+.left__section--form-button:hover{
+    background-color: rgb(60, 13, 153);
+}
+
+.left__section--customers-wrapper{
+    margin-top: 80px;
+}
+
+.left__section--customers-para{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgb(160, 174, 192);
+}
+
+.left__section--customers-img{
+    margin-top: 16px;
+    padding-right: 128px;
+    width: 100%;
+    opacity: .5;
+}
+
+.right__section{
+    width: 58.3333%;
+}
+
+.right__ssection--img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right__section--img{
+    max-width: 768px;
+    overflow: hidden;
 }
