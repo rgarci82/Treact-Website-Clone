@@ -683,3 +683,16 @@ PRICING
 .pricing__plan--btn-red{
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
+
+/*
+FOOTER
+*/
+
+#footer{
+    background-color: rgb(100, 21, 255);
+}
+
+.columns{
+    display: flex;
+    justify-content: space-between;
+}
