@@ -24,6 +24,11 @@ html{
 a{
     text-decoration: none;
     position: relative;
+    cursor: not-allowed;
+}
+
+button{
+    cursor: not-allowed;
 }
 
 img{
@@ -673,15 +678,36 @@ PRICING
 
 .pricing__plan--btn-green{
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    transition: all 300ms ease;
+}
+
+.pricing__plan--btn-green:hover{
+    scale: 1.01;
+    box-shadow: 0px 20px 20px -5px rgba(0, 0, 0, 0.1);
+    color: rgb(237, 242, 247);
 }
 
 .pricing__plan--btn-white{
+    transition: all 300ms ease;
     background-color: rgb(247 250 252);
     color: rgb(100, 21, 255);
 }
 
+.pricing__plan--btn-white:hover{
+    scale: 1.01;
+    background-color: rgb(226, 232, 240);
+    color: rgb(70, 15, 179);
+}
+
 .pricing__plan--btn-red{
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    transition: all 300ms ease;
+}
+
+.pricing__plan--btn-red:hover{
+    scale: 1.01;
+    box-shadow: 0px 20px 20px -5px rgba(0, 0, 0, 0.1);
+    color: rgb(237, 242, 247);
 }
 
 /*
@@ -736,7 +762,6 @@ FOOTER
 }
 
 .column__list--item{
-    cursor: not-allowed;
     margin-top: 12px;
 
 }
@@ -768,7 +793,6 @@ FOOTER
 }
 
 .footer__social--link{
-    cursor: not-allowed;
     margin-right: 16px;
     background-color: rgb(247, 250, 252);
     color: rgb(26, 32, 44);
