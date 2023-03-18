@@ -7,8 +7,15 @@
 }
 
 html{
+    width: 100%;
+    min-height: 100%;
     padding: 32px;
     line-height: 1.5;
+}
+
+body{
+    width: inherit;
+    height: inherit;
 }
 
 .row{
@@ -369,19 +376,6 @@ QUALITY WORK
     border-radius: 4px;
 }
 
-.work__dots{
-    position: absolute;
-    right: -40px;
-    bottom: 0;
-    z-index: -10;
-    height: 80px;
-    width: 80px;
-    transform: translateX(50%);
-    transform: translateY(50%);
-    fill: currentColor;
-    color: rgb(100, 21, 255);
-}
-
 /*
 STEPS
 */
@@ -419,18 +413,6 @@ STEPS
 .steps__img{
     max-width: 100%;
     height: auto;
-}
-
-.steps__dots{
-    width: 160px;
-    height: 160px;
-    opacity: 0.15;
-    position: absolute;
-    right: 240px;
-    bottom: -74px;
-    z-index: -2;
-    fill: currentColor;
-    color: rgb(100, 21, 255);
 }
 
 .steps__ul{
@@ -974,13 +956,6 @@ FOOTER
         align-items: center;
     }
 
-    .steps__dots{
-        width: 80px;
-        height: 80px;
-        right: 194px;
-        bottom: -34px;
-    }
-
     #values .section__para{
         margin-top: 32px;
         font-size: 16px;
@@ -1019,11 +994,181 @@ FOOTER
         align-items: center;
     }
 
+    .pricing__plan{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #pricing .section__title{
         font-size: 48px;
     }
 
     #footer{
         margin-top: 80px;
+    }
+    
+    #features .section__title{
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px){
+    .row{
+        max-width: 686px;
+    }
+
+    .right__section{
+        width: 100%;
+    }
+
+    .feature__services{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature__service{
+        width: 100%;
+    }
+
+    #quality-work .row{
+        flex-direction: column-reverse;
+    }
+
+    .work__left,
+    .work__right{
+        max-width: 448px;
+        width: 100%;
+    }
+
+    .work__left{
+        margin: 0 auto;
+        margin-top: 64px;
+        text-align: center;
+    }
+
+    #quality-work .section__sub-title,
+    #quality-work .section__title,
+    #quality-work .section__para{
+        text-align: center;
+    }
+
+    #quality-work .section__para{
+        font-size: 14px;
+    }
+
+    #steps .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .steps__left,
+    .steps__right{
+        max-width: 448px;
+        width: 100%;
+    }
+
+    .steps__right{
+        margin: 0 auto;
+        margin-top: 64px;
+    }
+
+    #steps .section__sub-title,
+    #steps .section__title{
+        text-align: center;
+    }
+
+    .steps__li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .steps__description{
+        margin-left: 0;
+        margin-top: 12px;
+    }
+
+    #values .row{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .values__left,
+    .values__right{
+        max-width: 448px;
+        width: 100%;
+    }
+
+    .values__left{
+        margin: 0 auto;
+        margin-top: 64px;
+        padding: 0;
+        text-align: center;
+    }
+
+    #values .section__para,
+    #values .section__title,
+    #values .section__sub-title{
+        text-align: center;
+    }
+
+    .values__two--section-wrapper{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .values__two--section:first-child{
+        margin-right: 0;
+    }
+
+    .values__two--section-para{
+        text-align: center;
+    }
+
+    .values__two--section-title{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #values .section__title{
+        font-size: 36px;
+    }
+
+    #values .section__para{
+        font-size: 14px;
+    }
+
+    .columns{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .column{
+        margin-top: 48px;
+        width: calc(100%/3);
+    }
+
+    #footer{
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .footer__socials{
+        flex-direction: column;
+    }
+
+    .footer__cr{
+        margin-top: 32px;
+    }
+
+    .footer__social{
+        margin-top: 32px;
     }
 }
