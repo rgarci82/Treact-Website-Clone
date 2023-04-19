@@ -135,7 +135,7 @@ nav{
     padding-bottom: 4px;
     border-bottom: 2px solid transparent;
     letter-spacing: 0.025em;
-    transition: all 300ms ease;
+    transition: all 500ms ease;
 
 }
 
@@ -196,7 +196,7 @@ nav{
 }
 
 .left__section--input{
-    padding: 20px 192px 20px 32px;
+    padding: 20px 100px 20px 32px;
     border-radius: 9999px;
     width: 100%;
     font-weight: 500;
@@ -853,6 +853,10 @@ FOOTER
     }
 
     .menu{
+        color: black;
+    }
+
+    .menu:hover{
         color: rgb(100, 21, 255);
     }
 
@@ -925,6 +929,7 @@ FOOTER
     }
 
     .right__section{
+        width: 100%;
         margin-top: 48px;
     }
 
@@ -1170,5 +1175,70 @@ FOOTER
 
     .footer__social{
         margin-top: 32px;
+    }
+}
+
+@media (max-width:640px){
+    .row{
+        max-width: 558px;
+    }
+
+    .left__section--form-button{
+        position: relative;
+        width: 100%;
+        padding: 18px 0;
+        margin-top: 16px;
+    }
+
+    .left__section--input{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    #features .section__title{
+        font-size: 32px;
+    }
+
+    .section__para{
+        font-size: 14px;
+    }
+
+    .feature__service{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature__service--description{
+        text-align: center;
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    #steps .section__title{
+        font-size: 30px;
+    }
+
+    #values .section__title{
+        font-size: 30px;
+    }
+
+    #pricing .section__title{
+        font-size: 36px;
+    }
+
+    .pricing__plan--price{
+        font-size: 36px;
+    }
+
+    .pricing__plan--btn-wrapper{
+        padding: 16px 16px;
+    }
+
+    .columns{
+        justify-content: center;
+    }
+
+    .column{
+        text-align: center;
     }
 }
