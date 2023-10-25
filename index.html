@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Free Modern React Templates</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="/app.js"></script>
   </head>
   <body>
     <section id="header">
@@ -588,5 +587,14 @@
         </div>
       </div>
     </section>
+    <script>
+      function openMenu() {
+        if (!document.body.classList.contains("menu--open")) {
+          document.body.classList += " menu--open";
+        } else {
+          document.body.classList -= " menu--open";
+        }
+      }
+    </script>
   </body>
 </html>
